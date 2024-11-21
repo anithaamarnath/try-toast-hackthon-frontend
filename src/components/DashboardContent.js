@@ -1,6 +1,7 @@
 import { AppBar, Box, CssBaseline, Toolbar, Typography } from '@mui/material';
 import React, { useState } from 'react';
 import Sidebar from './Sidebar';
+import DashboardFullContent from './DashboardFullContent';
 
 export default function DashboardContent() {
   const [selectedItem, setSelectedItem] = useState('dashboard');  
@@ -35,7 +36,7 @@ export default function DashboardContent() {
           }}
         >
           <Typography variant="h4" gutterBottom>
-            {selectedItem === 'dashboard' && 'Dashboard Content'}
+            {selectedItem === 'dashboard' && <DashboardFullContent />}
             {selectedItem === 'meetRedbrickers' && 'Meet Redbrickers Content'}
             {selectedItem === 'coffeeConnections' && 'Coffee Connections Content'}
             {selectedItem === 'communityCalendar' && 'Community Calendar Content'}
