@@ -2,6 +2,7 @@ import CssBaseline from '@mui/material/CssBaseline';
 import { createTheme, ThemeProvider } from '@mui/material/styles';
 import React from 'react';
 import DashboardContent from './components/DashboardContent';
+import BotIcon from './components/BotIcon';
 
 const theme = createTheme({
   palette: {
@@ -45,6 +46,7 @@ export default function App() {
     <ThemeProvider theme={theme}>
       <CssBaseline />
       <DashboardContent />
+      <BotIcon />
     </ThemeProvider>
   );
 }
